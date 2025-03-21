@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Loader2, Filter, Star, MapPin, Coffee, Wifi, Pool, Utensils } from "lucide-react";
+import { Loader2, Filter, Star, MapPin, Coffee, Wifi, Utensils, Bath } from "lucide-react";
 import { Hotel, searchHotels } from "@/data/mockData";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -30,7 +30,7 @@ import { toast } from "sonner";
 
 const amenityIcons = {
   "Free Wi-Fi": <Wifi className="h-4 w-4" />,
-  "Pool": <Pool className="h-4 w-4" />,
+  "Pool": <Bath className="h-4 w-4" />,
   "Restaurant": <Utensils className="h-4 w-4" />,
   "Breakfast": <Coffee className="h-4 w-4" />,
 };
